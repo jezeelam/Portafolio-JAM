@@ -1,0 +1,16 @@
+
+.hobbies__iconos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+.icono:nth-child(2) {
+    justify-items: stretch;
+}
+@media (min-width: 1024px) {
+    .hobbies__iconos {
+        display: flex;
+        justify-content: space-evenly;
+        filter: grayscale(0%);
+    }
+}

@@ -1,0 +1,47 @@
+.formacion__cursos {
+    display: flex;
+    flex-direction: column;
+}
+.formacion__descripcion {
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 1.4rem;
+    font-family: var(--fuenteSecundaria);
+}
+.formacion__anho {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 300;
+}
+.formacion__enCurso {
+    font-weight: 300;
+    margin-left: 0;
+}
+.img__codigojuan {
+    height: 12.5rem;
+    width: auto;
+}
+
+@media (min-width: 768px) {
+    .formacion__descripcion {
+        font-size: 2rem;
+    }
+    .img__codigojuan {
+        height: 20rem;
+    }
+}
+@media (min-width: 1024px) {
+    .formacion__cursos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        column-gap: 2rem;
+    }
+    .formacion__descripcion {
+        grid-area: 3;
+    }
+    .img__alura {
+        width: 90%;
+    }
+}

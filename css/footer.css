@@ -1,0 +1,29 @@
+.footer {
+    align-items: center;
+    background-color: var(--principal);
+    color: white;
+    display: flex;
+    font-size: 1.2rem;
+    height: 5rem;
+    justify-content: center;
+    text-align: center;
+}
+.btn3 {
+    color: var(--principal);
+    background-color: var(--bg-color);
+    margin-bottom: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: solid 1px var(--principal);
+}
+.boton {
+    display: flex;
+    justify-content: flex-end;
+}
+@media (min-width: 768px) {
+    .footer {
+        font-size: 1.6rem;
+        height: 10rem;
+        padding: 5rem;
+    }
+}

@@ -1,0 +1,28 @@
+.sobreMi {
+    text-align: center;
+    font-family: var(--fuenteSecundaria);
+}
+.sobreMi__parrafo {
+    background-color: var(--secundario);
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 94%;
+    line-height: 1.5;
+}
+.alura {
+    font-weight: 700;
+}
+@media (min-width: 768px) {
+    .sobreMi__parrafo {
+        font-size: 2rem;
+        padding: 2rem;
+    }
+}
+@media (min-width: 1024px) {
+    .sobreMi__parrafo {
+        font-size: 2.6rem;
+    }
+}

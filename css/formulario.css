@@ -1,0 +1,37 @@
+.contacto__titulo {
+    color: white;
+}
+.formulario {
+    background: rgb(17,204,168);
+    background: linear-gradient(180deg, rgba(17,204,168,0.38092323110884974) 0%, rgba(34,153,84,1) 100%);
+}
+.formulario__input {
+    outline: none;
+    display: block;
+    width: 100%;
+    height: 5rem;
+    margin: 0 0 2rem 0;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 1rem;
+}
+.formulario__textarea {
+    border: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    resize: none;
+    margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+    .contacto__titulo {
+        font-size: 3.5rem;
+    }
+}
+@media (min-width: 1024px) {
+    .desktop__contenedor {
+        width: 50%;
+    }
+}

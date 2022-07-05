@@ -1,0 +1,37 @@
+@media (min-width: 1024px) {
+    .proyectos {
+        display: grid;
+        grid-template-areas: 
+        "encriptador encriptadorimg"
+        "botones encriptadorimg"
+        "ahorcadoimg ahorcado"
+        "ahorcadoimg botones2";
+        grid-row: auto;
+        column-gap: 2rem;
+        row-gap: 5rem;
+        margin: 5rem 0;
+    }
+    .titulo__img2 {
+        grid-area: ahorcado;
+    }
+    .titulo__img1 {
+        grid-area: encriptador;
+    }
+    .proyecto__imagen1 {
+        grid-area: encriptadorimg;
+    }
+    .botones__encriptador {
+        grid-area: botones;
+        align-items: center;
+    }
+    .proyecto__imagen2 {
+        grid-area: ahorcadoimg;
+    }
+    .botones__ahorcado {
+        grid-area: botones2;
+        align-items: center;
+    }
+    .botones {
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,129 @@
+:root {
+    --bg-color: #EDEDED;
+    --principal: #229954;
+    --secundario: #85C1E9;
+    --fuentePrincipal: 'Source Sans Pro', sans-serif;
+    --fuenteSecundaria: 'Ubuntu', sans-serif;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fuentePrincipal);
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+.contenedor {
+    margin: 0 auto;
+    max-width: 120rem;
+    width: 90%;
+}
+h2 {
+    border-bottom: solid 1px lightgrey;
+    font-size: 2.4rem;
+    margin: 1.8rem auto;
+    text-align: center;
+    padding: 1rem;
+    width: 94%;
+}
+h3 {
+    text-align: center;
+    font-size: 1.6rem;
+}
+.botones {
+    display: flex;
+    justify-content: space-between;
+}
+.btn1, .btn2, .btn3 {
+    margin: 1rem 0;
+    height: 4rem;
+    font-size: 1.5rem;
+    width: 15rem;
+    border: none;
+    font-family: var(--fuentePrincipal);
+}
+.btn1 {
+    background-color: white;
+    color: var(--principal);
+    border: solid 1px var(--principal);
+}
+.btn2 {
+    color: white;
+    background-color: var(--principal);
+}
+@media (min-width: 768px) {
+    h3 {
+        font-size: 2rem;
+    }
+    .btn1, .btn2, .btn3 {
+        font-size: 2.1rem;
+        height: 6rem;
+        width: 28rem;
+    }
+}
+@media (min-width: 1024px) {
+    h2 {
+        font-size: 4rem;
+    }
+    h3, h3.skills {
+        font-size: 3.7rem;
+    }
+    .btn1, .btn2 {
+        width: 45%;
+    }
+    .btn1:hover, .btn2:hover, .btn3:hover {
+        cursor: pointer;
+        transition: height 1s, width 1s;
+    }
+    .btn1:hover {
+        height: 7rem;
+        width: 48%;
+        color: white;
+        background-color: var(--principal);
+    }
+    .btn2:hover {
+        height: 7rem;
+        width: 48%;
+        color: var(--principal);
+        background-color: white;
+        border: solid 1px var(--principal);
+    }
+    .btn3:hover {
+        background-color: black;
+        color: white;
+    }
+}
+.error {
+    width: 100%;
+    background-color: crimson;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    height: 4rem;
+    margin: 1rem 0 0 0;
+    text-transform: uppercase;
+}
+.correcto {
+    width: 100%;
+    background-color: var(--secundario);
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    height: 4rem;
+    margin: 1rem 0 0 0;
+    text-transform: uppercase;
+}

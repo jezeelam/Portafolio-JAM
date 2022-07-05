@@ -1,0 +1,86 @@
+.bienvenida {
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+    padding: 1.8rem;
+    gap: 1rem;
+}
+.fotoJezeel {
+    display: flex;
+    height: 15rem;
+    border-radius: 10rem;
+    border: solid 1px white;
+    box-shadow: -1px 20px 62px -24px rgba(0,0,0,0.75);
+}
+.bienvenida__texto {
+    font-family: var(--fuentePrincipal);
+    font-weight: 600;
+    text-align: center;
+    font-size: 2rem;
+}
+.bienvenida__parrafo {
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: var(--fuenteSecundaria);
+    font-weight: 300;
+}
+span {
+    font-weight: 700;
+}
+.bienvenida__redes {
+    display: flex;
+    gap: 1rem;
+    margin: 0 auto;
+    align-items: center;
+    width: 10rem;
+}
+@media (min-width: 768px) {
+    .bienvenida {
+        justify-content: space-around;
+    }
+    .bienvenida__texto {
+        font-size: 2.3rem;
+    }
+    .bienvenida__redes {
+        height: 5rem;
+    }
+    .icon-tabler-brand-github {
+        height: 40px;
+        width: 40px;
+    }
+    .icon-tabler-brand-linkedin {
+        height: 50px;
+        width: 45px;
+    }
+}
+@media (min-width: 1024px) {
+    .bienvenida {
+        flex-direction: column;
+        align-items: center;
+    }
+    .bienvenida__texto {
+        font-size: 5rem;
+        padding: 2rem;
+    }
+    .bienvenida__parrafo {
+        display: inline-block;
+        font-size: 3rem;
+    }
+    .fotoJezeel {
+        height: 30rem;
+        border-radius: 50%;
+    }
+    .bienvenida__redes {
+        height: 6rem;
+        gap: 3rem;
+        justify-content: center;
+    }
+    .icon-tabler-brand-github {
+        height: 60px;
+        width: 55px;
+    }
+    .icon-tabler-brand-linkedin {
+        height: 60px;
+        width: 60px;
+    }
+}
